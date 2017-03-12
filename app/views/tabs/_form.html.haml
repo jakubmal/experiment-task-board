@@ -1,0 +1,16 @@
+= form_for @tab do |f|
+  - if @tab.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@tab.errors.count, "error")} prohibited this tab from being saved:"
+      %ul
+        - @tab.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :board
+    = f.text_field :board
+  .actions
+    = f.submit 'Save'

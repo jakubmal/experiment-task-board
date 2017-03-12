@@ -17,6 +17,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 
+gem 'haml-rails', '~> 0.9'
 gem 'jbuilder', '~> 2.5'
 
 # Use Redis adapter to run Action Cable in production
